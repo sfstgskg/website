@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+
+    <link rel="stylesheet" href="web_dev.css">
+
+    <link rel="stylesheet" href="/common/common.css">
+    <script src="/common/common.js"></script>
+
+    <style>
+        @media screen and (max-width: 950px) {
+            .ItemBox1{
+                max-height: 8rem;
+            }
+            
+            .ItemBox2{
+                max-height: 4rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/pages/main_pages/common/common.css">
+    <style>
+        @media screen and (max-width: 950px) {
+            .Sider div:first-child{
+                font-size: 3.3rem
+            }
+            .Menu{
+                font-size: 2.8rem;
+            }
+            .Item{
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    <script src="/pages/main_pages/common/common.js"></script>
+</head>
+
+
+<body>
+    <div class="Navigation">
+        <div><a href="/">主页</a></div>
+        <div><a href="/pages/navigation_pages/About Me/about_me.html">关于我</a>
+             <a href="/pages/navigation_pages/About Rougbuild/about_rougebuild.html">关于Rougebuild</a>
+             <a href="/pages/navigation_pages/Contact Me/contact_me.html">联系我</a></div>
+    </div>
+
+    <button class="PhoneSider"><span class="Arrow">></span></button>
+    <div class="Sider">
+        <div><a href="#">Web Development</a></div>
+        <hr class="hr1">
+        <div class="MenuBox">
+            <a class="Menu" href="#"> 前端Frontend <span class="MenuArrow">></span></a>
+            <div class="ItemBox ItemBox1">
+                <a class="Item" href="">HTML + CSS</a>
+                <a class="Item" href="">JavaScript</a>
+            </div>
+        </div>
+        <hr class="hr2">
+        <div class="MenuBox">
+            <a class="Menu" href=""> 后端Backend <span class="MenuArrow">></span></a>
+            <div class="ItemBox ItemBox2">
+                <a class="Item" href="">Node.js</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="Content">
+        <div class="Title">
+            <h1>欢迎来到我的网页开发部分,这里记录我的网页开发过程</h1>
+        </div><hr>
+
+        <div class="Article">
+            <div>
+                <h2>2024/10/6</h2><hr>
+                <p>页面建立</p>
+            </div>
+            <div>
+                <h2>2024/10/6</h2><hr>
+                <p>
+                    目前正在学习前端HTML CSS JavaScript，<br>
+                    学习成果就是此网站的全部。<br>
+                    后端还没搞清楚是个什么情况，目前只知道要先学习Node.js，<br>
+                    由于我的主业不是web开发，同时也用不到太多后端，<br>
+                    因此前端用原生HTML CSS JavaScript 开发，不使用框架，框架学习成本高，<br>
+                    后端用Node.js开发，不用其它语言，用js贯穿全栈，降低学习成本<br>
+                </p>
+            </div>
+
+            <div>
+                <h2>2024/10/6</h2><hr>
+                <p>
+                    不得不说，手机端的适配是真有点烦，所以建议用电脑访问本网站<br>
+                    手机端只是简单适配了一下，不同尺寸的手机可能还会出现预料之外的错误<br>
+                    同时如果是手机访问，建议在浏览器中打开，直接在微信中打开也会出现预料之外的错误
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>

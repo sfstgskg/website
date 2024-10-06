@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development</title>
+
+    <link rel="stylesheet" href="game_dev.css">
+
+    <link rel="stylesheet" href="/common/common.css">
+    <script src="/common/common.js"></script>
+
+    <style>
+        @media screen and (max-width: 950px) {
+            .ItemBox1{
+                max-height: 8rem;
+            }
+            
+            .ItemBox2{
+                max-height: 12rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/pages/main_pages/common/common.css">
+    <style>
+        @media screen and (max-width: 950px) {
+            .Sider div:first-child{
+                font-size: 3.1rem
+            }
+            .Menu{
+                font-size: 2.8rem;
+            }
+            .Item{
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+    <script src="/pages/main_pages/common/common.js"></script>
+
+
+</head>
+
+
+
+<body>
+    <div class="Navigation">
+        <div><a href="/">主页</a></div>
+        <div><a href="/pages/navigation_pages/About Me/about_me.html">关于我</a>
+             <a href="/pages/navigation_pages/About Rougbuild/about_rougebuild.html">关于Rougebuild</a>
+             <a href="/pages/navigation_pages/Contact Me/contact_me.html">联系我</a></div>
+      </div>
+    
+
+      <button class="PhoneSider"><span class="Arrow">></span></button>
+      <div class="Sider">
+        <div><a href="#">Game Development</a></div>
+        <hr class="hr1">
+        <div class="MenuBox">
+            <a class="Menu" href="#"> Godot <span class="MenuArrow">></span></a>
+            <div class="ItemBox ItemBox1">
+                <a class="Item" href="">devlog1</a>
+                <a class="Item" href="">devlog2</a>
+            </div>
+        </div>
+        <hr class="hr2">
+        <div class="MenuBox">
+            <a class="Menu" href=""> GamePlay <span class="MenuArrow">></span></a>
+            <div class="ItemBox ItemBox2">
+                <a class="Item" href="">为什么是roguelike</a>
+                <a class="Item" href="">roguelike好玩在哪里</a>
+                <a class="Item" href="">怎么做好roguelike</a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="Content">
+        <div class="Title">
+            <h1>欢迎来到我的游戏开发部分,这里记录我的策划和程序部分</h1>
+        </div><hr>
+
+        <div class="Article">
+            <div>
+                <h2>2024/10/6</h2><hr>
+                <p>页面建立</p>
+            </div>
+            <div>
+                <h2>2024/10/6</h2><hr>
+                <p>
+                    我用的是Godot引擎<br>
+                    做的游戏类型的是roguelike，即肉鸽<br><br>
+                    听说最近Godot官方因为涉及政治LGBT+引起了不小的风波<br>
+                    社区现在乱成一锅粥，同时由于Godot是开源引擎<br>
+                    已经出现了Redot，是Godot一个fork分支<br>
+                    至于这个事件的结局和Godot的未来，我也不知道，过几天再看
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

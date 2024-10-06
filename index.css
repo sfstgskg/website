@@ -1,0 +1,133 @@
+.AvatarBox {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Avatar {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    border-radius: 50%
+
+}
+
+.Introduce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #000000;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.AvatarBox hr{
+    border: 1px solid #9dd596;
+    width: 77%;
+}
+
+.MainBox {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13rem;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    height: 24rem;
+    gap: 1.5rem;
+}
+
+
+.MainBox div{
+    flex: 1;
+}
+
+.MainBox div:last-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+}
+
+.MainBox a {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+    border: 2px solid #727e7172;
+    box-shadow: 5px 5px 10px 0px #6c6363;
+    transition: transform 0.27s ease-in-out;
+}
+
+.MainBox a:hover{
+    transform:  scale(1.02);
+    /* translateY(-0.2rem); */
+}
+
+.MainBox div:first-child a{
+    background-color: #9dd596; 
+    font-size: 2rem;
+    font-weight: 600;
+    color: #399d36;
+}
+.MainBox div:last-child a{
+    background-color: #53a14945;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #3da74bcd;
+} 
+
+
+
+
+@media (max-width: 950px)  {
+    .AvatarBox {
+        padding-top: 6rem;
+    }
+    .Avatar {
+        width: 20rem;
+        height: 20rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 50%
+    }
+    .Introduce{
+        font-size: 1.7rem;
+        letter-spacing: -0.01rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .AvatarBox hr{
+        border: 1px solid #9dd596;
+        width: 96%;
+    }
+
+    .MainBox {
+        width: 86%;
+        flex-direction: column;
+        height: 75rem;
+        gap: 2.5rem;
+        margin-bottom: 10rem;
+    }
+
+    .MainBox div:last-child{
+        gap: 2rem;
+    }
+
+    .MainBox div:first-child a{
+        font-size: 3.7rem;
+    }
+    
+    .MainBox div:last-child a{
+        font-size: 1.6rem;
+    }
+}

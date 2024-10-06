@@ -1,0 +1,34 @@
+.Content{
+    margin-left: 36%;
+    margin-top: 8rem;
+}
+
+.Content p:first-child {
+    font-size: 2.5rem;
+    font-weight: 530;
+}
+
+.Content hr{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    width: 33rem;  
+}
+
+.Content p:not(:first-child){
+    font-size: 1.3rem;
+}
+
+.span1{
+    font-size: 0.9rem;
+}
+
+.span2{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+    .Content {
+        margin-left:10%;
+    }
+}

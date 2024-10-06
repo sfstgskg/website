@@ -1,0 +1,13 @@
+.ItemBox1{
+    max-height: 2rem;
+  }
+  
+  .ItemBox2{
+    max-height: 2rem;
+  }
+  
+  .Sider div:first-child{
+    font-size: 3rem
+  }
+
+

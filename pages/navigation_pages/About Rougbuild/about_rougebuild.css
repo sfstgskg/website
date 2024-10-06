@@ -1,0 +1,21 @@
+.Content {
+    background-color: rgba(192, 202, 201, 0.178);
+    margin-left: 28rem;
+    margin-right: 28rem;
+    margin-top: 4.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 950px) {
+    .Content{
+        background-color: #00000000;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.7rem;
+    }
+
+}
+

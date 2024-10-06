@@ -1,0 +1,208 @@
+.Sider {
+    position: fixed;
+    box-sizing: border-box;
+    height: 100%;
+    top: 4.4rem;
+    width: 20rem;
+    background-color: #d4f4faf2;
+    box-shadow: 3px 0px 10px 0px #9ea5a5b0;
+    z-index: 9;
+    overflow-y: auto
+}
+
+.Sider div:first-child{
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  margin-bottom: 0.3rem;
+  
+  background-image: linear-gradient(to right, #32dec2, #37f182);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+}
+
+.Sider div:first-child:hover{
+  transform: translateY(-1.2px);
+  background-image: linear-gradient(to right, #37f182, #32dec2);
+}
+
+
+.Sider .hr1{
+  border-color: #67ffe8ad;
+  margin-bottom: 0.3rem;
+}
+
+.Sider .hr2{
+  margin-left:3.2rem ;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+
+.Menu {
+  display: flex;
+  margin-left: 3rem;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+
+.Item {
+  display: flex;
+  margin-left: 5.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.ItemBox {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* .ItemBox1 {
+  max-height: 4rem;
+}
+需在main_pages各自对应的css中设置
+手机端需在各自对应的html中设置
+.ItemBox2 {
+  max-height: 2rem;
+} */
+
+.ItemBox_ {
+  max-height: 0;
+}
+
+.MenuArrow {
+  color: #524e4cb9;
+  position: absolute;
+  right: 1rem;
+  rotate: 90deg;
+  transition: transform 0.3s ease-in-out;
+}
+.rotate {
+  transform: rotate(-90deg);
+}
+
+
+.Menu, .Item {
+  border-radius: 0.3rem 0.1rem 0.1rem 0.3rem;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.Menu:hover, .Item:hover {
+  transform: translateY(-1.5px); 
+  background-color: #74e3ff97;
+}
+
+.Content {
+  box-sizing: border-box;
+  margin-top: 4.4rem;
+  margin-left: 20rem;
+  padding-top: 1rem;
+  padding-left: 1.8rem;
+}
+
+.Title {
+  display: flex;
+}
+
+.Article{
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-right: 7rem;
+}
+
+.Article p{
+  font-size: 1.1rem;
+}
+
+.Article > div{
+  margin-bottom: 3rem;
+}
+
+.Article hr{
+  width: 8rem;
+}
+
+
+
+
+.PhoneSider {
+    display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+    .PhoneSider {
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 90rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 10%;
+        border: 3px solid #3f8dc9c6;
+        box-sizing: border-box;
+        background-color: #d4f5f593;
+        color: #308dd4de;
+        transition: left 0.3s ease-in-out;
+    }
+    .PhoneSider_ {
+        left: 33rem;
+    }
+
+    .PhoneSider .Arrow {
+        transition: transform 0.3s ease-in-out;
+    }
+    .PhoneSider .Arrow_ {
+        transform: rotate(180deg);
+    }
+    
+    .Sider {
+        width: 33rem;
+        max-width:0rem;
+        transition: max-width 0.3s ease-in-out;
+    }
+    .Sider_ {
+        max-width: 33rem;
+    }
+
+    .Content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .Title{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .Title h1{
+        font-size: 2.3rem;
+    }
+
+    .Article{
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    .Article hr{
+      width: 11rem;
+    }
+
+    .Article h2{
+      font-size: 2rem;
+    }
+
+    .Article p{
+      font-size: 1.5rem;
+    }
+
+}
